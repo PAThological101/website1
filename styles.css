@@ -26,13 +26,11 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
-.creative {
+body {
   background-image: url("rocket.JPG");
-  width: 100%;
-  height: 600px;
   background-repeat: no-repeat;
 }
 
-h1 {
+h1, p {
   color: white;
 }
