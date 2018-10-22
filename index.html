@@ -3,38 +3,70 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
 
-<!--
-<nav>
-  <a class="active" href="#">Home</a>
-  <a href="www.paab.ca">News</a>
-  <a href="#">Contact</a>
-  <a href="#">About</a>
-</nav>
--->
+<form class="" action="index.html" method="post">
 
-<ul>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="http://www.paab.ca">Efficacy</a></li>
-  <li><a href="#">Safety Info</a></li>
-  <li><a href="MOA.html">MOA</a></li>
-</ul>
-<p>There's power. Then there's...</p>
+<fieldset style="width: 200px;">
+<legend>Healthcare Professional Login</legend>
 
-  <h1>BREAKOUT POWER</h1>
+<p>Role:
+<select class="hcp" name="hcptype">
+  <option value="physician">Physician</option>
+  <option value="nurse">Nurse</option>
+  <option value="pharmacist">Pharmacist</option>
+</select>
+</p>
 
-<!--
-https://i.giphy.com/media/UAmql0771rV8k/giphy.webp
+<p>Province/Territory:
+<select class="hcp" name="province">
+  <option value="ont">Ontario</option>
+  <option value="bc">British Columbia</option>
+  <option value="qc">Quebec</option>
+  <option value="al">Alberta</option>
+  <option value="man">Manitoba</option>
+  <option value="nb">New Brunswick</option>
+  <option value="nfl">Newfoundland & Labrador</option>
+  <option value="ns">Nova Scotia</option>
+  <option value="nunavut">Nunavut</option>
+  <option value="pei">Prince Edward Island</option>
+  <option value="sask">Saskatchewan</option>
+  <option value="yukon">Yukon</option>
+  <option value="NWT">Northwest Territories</option>
+</select>
+</p>
 
-gif of panda trying to break out
+<p>Licence Number:
+<input type="text" name="licence" size="10" />
+</p>
 
-Use it for "there's power"  then use something good for "then there's breakout power"
--->
+<button onclick="window.location.href='hcp.html'" type="button" name="hcpbutton">Submit</button>
 
-<img src="https://i.giphy.com/media/UAmql0771rV8k/giphy.webp" alt="Panda breakout">
-    <script type="script.js"></script>
+</fieldset>
+</form>
+
+<form class="patient" action="index.html" method="post">
+
+<fieldset style="width: 120px;">
+
+<!--    Invalid Licence Number   -->
+
+
+
+  <legend>Patients</legend>
+  <p>Enter your medication's Drug Identification Number (DIN):
+  <input type="text" name="din" size="10" />
+  </p>
+
+<p>What is a DIN?</p>
+<!-- do a modal showing what a din is-->
+<button type="button" name="ptbutton">Submit</button>
+
+</fieldset>
+
+</form>
+
+
   </body>
 </html>
