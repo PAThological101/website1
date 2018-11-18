@@ -3,10 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
+    <style media="screen">
+
+      body {
+        background-image: radial-gradient(blue, lightblue);
+      }
+
+      .hcpform {
+        float: right;
+      }
+
+      .patientform{
+        float: left;
+      }
+
+      .doctor img {
+      height: 12%;
+      width: 12%
+      }
+
+      .patient img {
+        height: 25%;
+        width: 25%;
+      }
+
+    </style>
   </head>
   <body>
 
-<form class="" action="index.html" method="post">
+<h1>Energon</h1>
+<div class="doctor" style="border-style: solid">
+  <img src="images/doctor.jpg" alt="doctor image">
+<form class="hcpform" action="index.html" method="post">
 
 <fieldset style="width: 200px;">
 <legend>Healthcare Professional Login</legend>
@@ -45,8 +73,14 @@
 
 </fieldset>
 </form>
+</div>
 
-<form class="patient" action="index.html" method="post">
+<br>
+<br>
+
+<div class="patient" style="border-style: solid;">
+  <img src="images/patient.jpg" alt="image of patient">
+<form class="patientform" action="index.html" method="post">
 
 <fieldset style="width: 120px;">
 
@@ -66,7 +100,11 @@
 </fieldset>
 
 </form>
+</div>
 
+<footer>
+
+</footer>
 
   </body>
 </html>
